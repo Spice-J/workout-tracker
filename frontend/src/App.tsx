@@ -1,7 +1,14 @@
-import Message from './message';
+import Header from "./components/Header";
 
 function App() {
-  return <div><Message></Message></div>
-}
+  return (
+  <div>
+    <Header />
 
+    <h2>Get to work!</h2>
+    <p>StrongBand will track your workouts and analyze your data to provide insights. Keep up the good work - Jared Spice</p>
+    <button>Log a workout</button>
+  </div>
+  );
+}
 export default App;
