@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 10%;
+    border-bottom: 2px ;
+}
+
+h1 {
+    margin: 30%;
+}
+
+img {
+    max-height: 80px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    
+}
+
+div .header-border-line {
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
+    background: linear-gradient(to right, transparent, #000, transparent);
+}
