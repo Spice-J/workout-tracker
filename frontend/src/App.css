@@ -1,0 +1,14 @@
+.app-body {
+    background-color: rgb(38, 51, 51);
+    color: rgb(241, 241, 226);
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}

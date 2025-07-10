@@ -1,32 +1,59 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3% 10%;
-    border-bottom: 2px ;
+  display: flex;
+  justify-content: space-between; /* Logo left, nav right */
+  align-items: center;
+  gap: 5%;
+  padding: 1rem;
+  position: relative; /* Anchor for absolute h1 */
 }
 
 h1 {
-    margin: 30%;
+  position: absolute; /* Center h1 on screen */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: rgb(241, 241, 226);
 }
 
-img {
-    max-height: 80px;
+.header-img {
+  max-height: 80px;
+  margin-left: 2rem;
+  border-radius: 25%;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+.header-nav {
+  display: flex;
+  align-items: center; /* Centers all items vertically */
+  gap: 1rem;
+  padding: 0;
+  margin: 0 2rem 0 0;
 }
 
-li {
-    
+li a, .auth-button {
+  color: rgb(241, 241, 226);
+  text-decoration: none;
 }
 
-div .header-border-line {
-    height: 1px;
-    width: 100%;
-    margin: 20px 0;
-    background: linear-gradient(to right, transparent, #000, transparent);
+li a:hover, .auth-button:hover {
+  color: #d48d09;
+}
+
+.auth-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-avatar {
+  max-height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+div.header-border-line {
+  height: 1px;
+  width: 100%;
+  margin: 20px 0;
+  background: linear-gradient(to right, transparent, #000, transparent);
 }
